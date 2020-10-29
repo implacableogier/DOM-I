@@ -40,3 +40,43 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+
+//Start of my code
+
+//Nav - Anchors
+const navAnchors = document.querySelectorAll('a');
+navAnchors[0].textContent = 'Services';
+navAnchors[1].textContent = 'Product';
+navAnchors[2].textContent = 'Vision';
+navAnchors[3].textContent = 'Features';
+navAnchors[4].textContent = 'About';
+navAnchors[5].textContent = 'Contact';
+
+//Adding Images
+const roundImage = document.getElementById('cta-img');
+roundImage.src = 'img/header-img.png'
+
+const rectImage = document.getElementById('middle-img')
+rectImage.src = 'img/mid-page-accent.jpg'
+
+//H1 'DOM IS AWESOME'
+const h1Text = document.querySelector('h1');
+h1Text.textContent = "DOM Is Awesome"
+
+linebreak = document.createElement('br');
+h1Text.appendChild(linebreak);
+
+//Button stuff
+const button = document.querySelector('button');
+button.textContent = 'Get Started';
+
+//h4 elements 
+const h4 = document.querySelectorAll('h4');
+h4[0].textContent = 'FEATURES';
+h4[1].textContent = 'ABOUT';
+h4[2].textContent = 'SERVICES';
+h4[3].textContent = 'PRODUCT';
+h4[4].textContent = 'VISION';
+h4[5].textContent = 'CONTACT';
