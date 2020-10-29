@@ -72,7 +72,7 @@ h1Text.appendChild(linebreak);
 const button = document.querySelector('button');
 button.textContent = 'Get Started';
 
-//h4 elements 
+//all h4 elements 
 const h4 = document.querySelectorAll('h4');
 h4[0].textContent = 'FEATURES';
 h4[1].textContent = 'ABOUT';
@@ -80,3 +80,34 @@ h4[2].textContent = 'SERVICES';
 h4[3].textContent = 'PRODUCT';
 h4[4].textContent = 'VISION';
 h4[5].textContent = 'CONTACT';
+
+//p text under the headings in the main body section
+  //text for 'features'
+const firstP = document.querySelector('.text-content p');
+firstP.textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metusscelerisque quis."
+  //text for 'About'
+const secondP = document.querySelector('.text-content:nth-of-type(2) p')
+secondP.textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+  //text for 'Services'
+const thirdP = document.querySelector('.bottom-content .text-content p')
+thirdP.textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+  //text for 'Product'
+  const fourthP = document.querySelector('.bottom-content .text-content:nth-of-type(2) p')
+  fourthP.textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+  //text for 'Vision'
+  const fifthP = document.querySelector('.bottom-content .text-content:nth-of-type(3) p')
+  fifthP.textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+
+//contact info section
+const contactAddress = document.querySelector('.contact p');
+contactAddress.textContent = '123 Way 456 Street, Somewhere, USA';
+
+const contactPhone = document.querySelector('.contact p:nth-of-type(2)')
+contactPhone.textContent = "1 (888) 888-8888"
+
+const contactEmail = document.querySelector('.contact p:nth-of-type(3)');
+contactEmail.textContent = 'sales@greatidea.io'
+
+//footer text
+const footerText = document.querySelector('footer p');
+footerText.textContent = "Copyright Great Idea! 2018";
