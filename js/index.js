@@ -111,3 +111,19 @@ contactEmail.textContent = 'sales@greatidea.io'
 //footer text
 const footerText = document.querySelector('footer p');
 footerText.textContent = "Copyright Great Idea! 2018";
+
+//changing nav item  colors to green
+const makeGreen = document.querySelectorAll('.container header nav a');
+makeGreen.forEach(item => item.style.color = 'green');
+
+//add an item to the beginning of the nav bar
+const newNav1 = document.createElement('a')
+newNav1.textContent = 'First Item'
+const navContainer = document.querySelector('.container header nav')
+navContainer.prepend(newNav1)
+newNav1.style.color = 'green';
+    //and another item at the end of the nav bar
+const newNav2 = document.createElement('a');
+newNav2.textContent = 'Last Item';
+navContainer.appendChild(newNav2);
+newNav2.style.color = 'green'
